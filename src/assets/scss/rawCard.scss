@@ -43,12 +43,9 @@ li.type2 {
           .title {
             color: #333;
             display: block;
-            display: -webkit-box;
             height: 42px;
             font-size: 14px;
             line-height: 1.5;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
           }

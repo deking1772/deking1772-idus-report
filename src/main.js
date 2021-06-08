@@ -1,4 +1,4 @@
-import "@babel/polyfill";
+import "@babel/polyfill"; // ie 대응
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App.vue";
