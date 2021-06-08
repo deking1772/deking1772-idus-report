@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <h1>과제 2. 입력 폼 UI</h1>
     <div class="item-wrapper">
       <h3>default 상태 & 입력중 상태</h3>

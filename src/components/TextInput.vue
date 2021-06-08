@@ -13,7 +13,9 @@
       ></textarea>
       <span class="remain-cnt">{{ remainTextCnt }}</span>
     </div>
-    <button :class="btnClass" :disabled="buttonDisabled">save</button>
+    <button :class="btnClass" :disabled="buttonDisabled" @click="save">
+      save
+    </button>
   </div>
 </template>
 
@@ -32,7 +34,11 @@ export default {
   },
   computed: {
     remainTextCnt: function() {
-      return this.data.maxLength - this.content.length;
+      let remainCnt = this.data.maxLength - this.content.length;
+      if (remainCnt === 0) {
+        alert("더이상 작성할 수 없습니다.");
+      }
+      return remainCnt;
     },
     btnClass: function() {
       let btnClass = "btn";
@@ -53,39 +59,13 @@ export default {
       }
       return className;
     },
+    save: function() {
+      alert("저장되었습니다.");
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.wrapper {
-  width: fit-content;
-  position: relative;
-  .text {
-    font-size: 12px;
-    color: #222222;
-    &.readonly {
-      color: #d73038;
-      background-color: #dddddd;
-      border-radius: 4px;
-      border: 1px solid #aaaaaa;
-    }
-  }
-  .remain-cnt {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-  }
-  .btn {
-    width: 15%;
-    border: 1px solid #212529;
-    border-radius: 5px;
-    &.btn-active {
-      font-weight: bold;
-      color: #0d6efd;
-      border: 1px solid #0d6efd;
-      border-radius: 5px;
-    }
-  }
-}
+@import "~@/assets/scss/textInput.scss";
 </style>

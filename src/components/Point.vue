@@ -20,24 +20,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.dot-wrapper {
-  padding: 6px 0;
-  height: 20px;
-  line-height: 20px;
-  .dot {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 1px solid #999;
-    margin: 2px;
-    vertical-align: top;
-    &.on {
-      background-color: #ffc801;
-    }
-    &.off {
-      background-color: #d9d9d9;
-    }
-  }
-}
+@import "~@/assets/scss/point.scss";
 </style>

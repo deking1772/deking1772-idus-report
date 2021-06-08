@@ -77,12 +77,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-// Breakpoints
-$breakpoint-mobile: 335px;
-$breakpoint-tablet: 758px;
-$breakpoint-desktop: 1024px;
-
 .frame {
+  text-align: left;
   width: 100%;
   list-style: none;
   padding: 0;
