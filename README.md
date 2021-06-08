@@ -1,6 +1,4 @@
-# 류병옥 홈워크 
-
-## idus-report 
+# 류병옥 홈워크 (idus-report )
 
 ## Project setup
 ```
