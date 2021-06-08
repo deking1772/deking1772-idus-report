@@ -62,7 +62,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.item-wrapper {
-  margin-bottom: 10px;
-}
+@import "~@/assets/scss/report2.scss";
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrapper">
+    <div class="text-box">
       <textarea
         :class="textAreaClass(data.readOnly)"
         :name="data.name"
