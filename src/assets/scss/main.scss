@@ -7,4 +7,5 @@
 .wrapper {
   width: fit-content;
   margin: 0 auto;
+  display: table; // ie 대응하기 위함
 }
