@@ -1,5 +1,6 @@
 .wrapper {
   position: relative;
+  display: table; // ie 대응하기 위함
   .text {
     font-size: 12px;
     color: #222222;
