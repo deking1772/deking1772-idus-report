@@ -11,7 +11,7 @@ yarn serve
 ```
 
 
-##  pre request) node -v v14.16.1
+##  pre request) node -v 14.16.1
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
