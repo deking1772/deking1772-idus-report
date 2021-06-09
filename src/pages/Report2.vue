@@ -31,7 +31,7 @@ export default {
         name: "text1",
         cols: 40,
         rows: 5,
-        placeholder: "1. 내용이 있을수도 있습니다.",
+        placeholder: "내용이 있을수도 있습니다.",
         maxLength: 500, // 최대 글자수 설정
         readOnly: false,
         value: "",
@@ -41,7 +41,7 @@ export default {
         name: "text1",
         cols: 40,
         rows: 5,
-        placeholder: "2. 내용이 있을수도 있습니다.",
+        placeholder: "내용이 있을수도 있습니다.",
         maxLength: 500, // 최대 글자수 설정
         readOnly: false,
         value: "aaa",
@@ -51,7 +51,7 @@ export default {
         name: "text1",
         cols: 40,
         rows: 5,
-        placeholder: "3. 내용이 있을수도 있습니다.",
+        placeholder: "내용이 있을수도 있습니다.",
         maxLength: 500, // 최대 글자수 설정
         readOnly: true,
         value: "읽기전용입니다.",

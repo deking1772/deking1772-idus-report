@@ -1,24 +1,28 @@
 <template>
   <li class="type1">
     <div class="card">
-      <!-- 카드영역 -->
-      <div class="card-img" :style="backgroundImg"></div>
+      <a :href="card.to" target="_blank">
+        <!-- 카드영역 -->
+        <div class="card-img" :style="backgroundImg">
+          <span class="sr_only">{{ card.a11y }}</span>
+        </div>
 
-      <!-- 카드 텍스트 영역 -->
-      <div class="card-text">
-        <label class="label">{{ card.label }}</label>
-        <h4 class="title">{{ card.title }}</h4>
-        <span class="hilight">{{ card.hilight }}</span>
-        <span class="del">{{ card.crossOut }}</span>
-      </div>
+        <!-- 카드 텍스트 영역 -->
+        <div class="card-text">
+          <label class="label">{{ card.label }}</label>
+          <h4 class="title">{{ card.title }}</h4>
+          <span class="hilight">{{ card.hilight }}</span>
+          <span class="del">{{ card.crossOut }}</span>
+        </div>
 
-      <!-- 별점 영역 -->
-      <div class="card-review" v-if="card.isReview">
-        <point :point="card.point"></point>
-        <span class="review" v-if="card.review">
-          {{ card.review }}
-        </span>
-      </div>
+        <!-- 별점 영역 -->
+        <div class="card-review" v-if="card.isReview">
+          <point :point="card.point"></point>
+          <span class="review" v-if="card.review">
+            {{ card.review }}
+          </span>
+        </div>
+      </a>
     </div>
   </li>
 </template>
